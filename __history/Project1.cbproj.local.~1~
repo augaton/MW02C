@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/11/07 10:18:37.140,=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/07 10:18:37.149,=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
+    <Transaction>2023/11/07 10:18:48.568,C:\Users\AMuller\Desktop\MW02\File1.cpp=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
+    <Transaction>2023/11/07 10:19:11.696,=C:\Users\AMuller\Desktop\MW02\IRClientTCP.cpp</Transaction>
+    <Transaction>2023/11/07 10:19:11.701,=C:\Users\AMuller\Desktop\MW02\IRClientTCP.h</Transaction>
+    <Transaction>2023/11/07 10:26:40.309,C:\Users\AMuller\Desktop\tesrt\Project1PCH1.h=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/07 10:26:41.084,C:\Users\AMuller\Desktop\MW02\Project1.cbproj=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

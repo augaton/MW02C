@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/11/09 09:21:07.000.138,=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2023/11/09 09:21:07.000.121,=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/09 09:21:15.000.744,=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2023/11/09 09:21:15.000.730,=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/09 09:31:29.000.916,C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Unit1.dfm=C:\Users\AMuller\Desktop\MW02\code graphique\Unit1.dfm</Transaction>
+    <Transaction>2023/11/09 09:31:29.000.916,C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Unit1.h=C:\Users\AMuller\Desktop\MW02\code graphique\Unit1.h</Transaction>
+    <Transaction>2023/11/09 09:31:29.000.916,C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Unit1.cpp=C:\Users\AMuller\Desktop\MW02\code graphique\Unit1.cpp</Transaction>
+    <Transaction>2023/11/09 09:31:43.000.757,C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1PCH1.h=C:\Users\AMuller\Desktop\MW02\code graphique\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/09 09:31:44.000.295,C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1.cbproj=C:\Users\AMuller\Desktop\MW02\code graphique\Project1.cbproj</Transaction>
+    <Transaction>2023/11/09 09:32:37.000.500,C:\Users\AMuller\Desktop\MW02\code graphique\Project1.cbproj=C:\Users\AMuller\Desktop\MW02\code graphique\Project1.cbproj</Transaction>
+    <Transaction>2023/11/09 09:35:05.921,=C:\Users\AMuller\Desktop\MW02\code graphique\DMXTCP.cpp</Transaction>
+    <Transaction>2023/11/09 09:35:05.928,=C:\Users\AMuller\Desktop\MW02\code graphique\DMXTCP.h</Transaction>
+    <Transaction>2023/11/09 09:35:50.223,=C:\Users\AMuller\Desktop\MW02\code graphique\IRClientTCP.cpp</Transaction>
+    <Transaction>2023/11/09 09:35:50.227,=C:\Users\AMuller\Desktop\MW02\code graphique\IRClientTCP.h</Transaction>
+  </Transactions>
+</BorlandProject>

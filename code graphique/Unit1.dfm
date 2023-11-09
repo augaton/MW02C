@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Client DMX - Port 4123'
-  ClientHeight = 279
+  ClientHeight = 261
   ClientWidth = 332
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -99,13 +99,6 @@ object Form1: TForm1
     Width = 52
     Height = 13
     Caption = 'Adresse IP'
-  end
-  object Label12: TLabel
-    Left = 38
-    Top = 244
-    Width = 27
-    Height = 13
-    Caption = 'Canal'
   end
   object ScrollBar1: TScrollBar
     Left = 16
@@ -252,7 +245,7 @@ object Form1: TForm1
     Width = 121
     Height = 21
     TabOrder = 11
-    Text = 'IP'
+    Text = '172.20.21.17'
   end
   object Button2: TButton
     Left = 16
@@ -279,14 +272,11 @@ object Form1: TForm1
     Height = 25
     Caption = 'Demonstration'
     TabOrder = 14
-    OnClick = Button4Click
   end
-  object Edit2: TEdit
-    Left = 79
-    Top = 241
-    Width = 121
-    Height = 21
-    TabOrder = 15
-    Text = 'Canal'
+  object Timer2: TTimer
+    Enabled = False
+    OnTimer = Timer2Timer
+    Left = 216
+    Top = 216
   end
 end

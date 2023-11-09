@@ -8,6 +8,7 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include "DMXTCP.h"
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -38,13 +39,11 @@ __published:	// Composants gérés par l'EDI
 	TButton *Button2;
 	TButton *Button3;
 	TButton *Button4;
-	TEdit *Edit2;
-	TLabel *Label12;
+	TTimer *Timer2;
 	void __fastcall ScrollBar1Change(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall Button3Click(TObject *Sender);
-	void __fastcall Button4Click(TObject *Sender);
 	void __fastcall ScrollBar3Change(TObject *Sender);
 	void __fastcall ScrollBar4Change(TObject *Sender);
 	void __fastcall ScrollBar5Change(TObject *Sender);
@@ -54,6 +53,7 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall ScrollBar8Change(TObject *Sender);
 	void __fastcall ScrollBar9Change(TObject *Sender);
 	void __fastcall ScrollBar10Change(TObject *Sender);
+	void __fastcall Timer2Timer(TObject *Sender);
 private:	// Déclarations utilisateur
 	DMXTCP monDMX;
 public:		// Déclarations utilisateur

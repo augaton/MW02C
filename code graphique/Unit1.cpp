@@ -38,13 +38,6 @@ void __fastcall TForm1::Button3Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm1::Button4Click(TObject *Sender)
-{
-	monDMX.Demonstration();
-	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
-}
-
-//---------------------------------------------------------------------------
 
 void __fastcall TForm1::ScrollBar2Change(TObject *Sender)
 {
@@ -100,6 +93,10 @@ void __fastcall TForm1::ScrollBar10Change(TObject *Sender)
 	monDMX.ModifierCanal(10,255-ScrollBar10->Position);
 }
 //---------------------------------------------------------------------------
-
-
+void __fastcall TForm1::Timer2Timer(TObject *Sender)
+{
+	monDMX.Demonstration();
+	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
+}
+//---------------------------------------------------------------------------
 

@@ -3,10 +3,24 @@
 	<Transactions>
     <Transaction>2023/11/07 10:18:37.000.140,=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
     <Transaction>2023/11/07 10:18:37.000.149,=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
-    <Transaction>2023/11/07 10:18:48.000.568,C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\File1.cpp=C:\Users\AMuller\Desktop\MW02\File1.cpp</Transaction>
-    <Transaction>2023/11/07 10:19:11.000.696,=C:\Users\AMuller\Desktop\MW02\IRClientTCP.cpp</Transaction>
+    <Transaction>2023/11/07 10:18:48.000.568,C:\Users\AMuller\Desktop\MW02\File1.cpp=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
     <Transaction>2023/11/07 10:19:11.000.701,=C:\Users\AMuller\Desktop\MW02\IRClientTCP.h</Transaction>
-    <Transaction>2023/11/07 10:26:40.000.309,C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1PCH1.h=C:\Users\AMuller\Desktop\tesrt\Project1PCH1.h</Transaction>
-    <Transaction>2023/11/07 10:26:41.000.084,C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1.cbproj=C:\Users\AMuller\Desktop\MW02\Project1.cbproj</Transaction>
-  </Transactions>
+    <Transaction>2023/11/07 10:19:11.000.696,=C:\Users\AMuller\Desktop\MW02\IRClientTCP.cpp</Transaction>
+    <Transaction>2023/11/07 10:26:40.000.309,C:\Users\AMuller\Desktop\tesrt\Project1PCH1.h=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/11/07 10:26:41.000.084,C:\Users\AMuller\Desktop\MW02\Project1.cbproj=C:\Users\AMuller\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+    <Transaction>2023/11/08 15:53:00.457,=C:\Users\AMuller\Desktop\MW02\Unit1.cpp</Transaction>
+    <Transaction>2023/11/08 15:53:47.177,=C:\Users\AMuller\Desktop\MW02\File2.cpp</Transaction>
+    <Transaction>2023/11/08 15:54:50.970,C:\Users\AMuller\Desktop\MW02\DMXTCP.cpp=C:\Users\AMuller\Desktop\MW02\File2.cpp</Transaction>
+    <Transaction>2023/11/08 17:00:05.239,=C:\Users\AMuller\Desktop\MW02\File2.h</Transaction>
+    <Transaction>2023/11/08 17:00:21.194,C:\Users\AMuller\Desktop\MW02\DMXTCP.h=C:\Users\AMuller\Desktop\MW02\File2.h</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\Desktop"/>
+    <File Path="..\tesrt"/>
+    <File Path="..\tesrt\Project1PCH1.h"/>
+    <File Path="DMXTCP.cpp"/>
+    <File Path="File1.cpp"/>
+    <File Path="IRClientTCP.cpp"/>
+    <File Path="IRClientTCP.h"/>
+    <File Path="DMXTCP.h"/>
+  </ProjectSortOrder>
 </BorlandProject>

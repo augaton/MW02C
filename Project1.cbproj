@@ -94,6 +94,12 @@
         <BCC_PCHName_Clang>..\tesrt\Project1PCH1.h</BCC_PCHName_Clang>
     </PropertyGroup>
     <ItemGroup>
+        <CppCompile Include="DMXTCP.cpp">
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
+        <None Include="DMXTCP.h">
+            <BuildOrder>5</BuildOrder>
+        </None>
         <CppCompile Include="File1.cpp">
             <BuildOrder>1</BuildOrder>
         </CppCompile>

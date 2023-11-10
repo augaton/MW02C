@@ -272,10 +272,11 @@ object Form1: TForm1
     Height = 25
     Caption = 'Demonstration'
     TabOrder = 14
+    OnClick = Button4Click
   end
-  object Timer2: TTimer
+  object Timer: TTimer
     Enabled = False
-    OnTimer = Timer2Timer
+    OnTimer = TimerTimer
     Left = 216
     Top = 216
   end

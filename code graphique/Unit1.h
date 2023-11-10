@@ -39,7 +39,7 @@ __published:	// Composants gérés par l'EDI
 	TButton *Button2;
 	TButton *Button3;
 	TButton *Button4;
-	TTimer *Timer2;
+	TTimer *Timer;
 	void __fastcall ScrollBar1Change(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
@@ -53,7 +53,8 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall ScrollBar8Change(TObject *Sender);
 	void __fastcall ScrollBar9Change(TObject *Sender);
 	void __fastcall ScrollBar10Change(TObject *Sender);
-	void __fastcall Timer2Timer(TObject *Sender);
+	void __fastcall TimerTimer(TObject *Sender);
+	void __fastcall Button4Click(TObject *Sender);
 private:	// Déclarations utilisateur
 	DMXTCP monDMX;
 public:		// Déclarations utilisateur

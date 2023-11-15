@@ -31,12 +31,32 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
 {
 	monDMX.FullOFF();
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
+	ScrollBar1->Position = 0;
+	ScrollBar2->Position = 0;
+	ScrollBar3->Position = 0;
+	ScrollBar4->Position = 0;
+	ScrollBar5->Position = 0;
+	ScrollBar6->Position = 0;
+	ScrollBar7->Position = 0;
+	ScrollBar8->Position = 0;
+	ScrollBar9->Position = 0;
+	ScrollBar10->Position = 0;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Button3Click(TObject *Sender)
 {
 	monDMX.FullON();
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
+	ScrollBar1->Position = 255;
+	ScrollBar2->Position = 255;
+	ScrollBar3->Position = 255;
+	ScrollBar4->Position = 255;
+	ScrollBar5->Position = 255;
+	ScrollBar6->Position = 255;
+	ScrollBar7->Position = 255;
+	ScrollBar8->Position = 255;
+	ScrollBar9->Position = 255;
+	ScrollBar10->Position = 255;
 }
 //---------------------------------------------------------------------------
 
@@ -244,4 +264,43 @@ void __fastcall TForm1::TrackBar1Change(TObject *Sender)
      ScrollBar3->Position = (255 - TrackBar1->Position);
 }
 //---------------------------------------------------------------------------
+
+
+
+
+
+void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int X,
+		  int Y)
+{
+	int haut = Image1->Top + Y - Image1->Height/2;
+	int gauche = Image1->Left + X - Image1->Width/2;
+	if (click == true && gauche>Bevel1->Left
+					  && haut>Bevel1->Top
+					  && gauche+Image1->Width < Bevel1->Left+Bevel1->Width
+					  && haut+Image1->Height<Bevel1->Top+Bevel1->Height) {
+		Image1->Top = haut;
+		Image1->Left = gauche;
+
+		Scrollbar1->Position = X;
+		Scrollbar2->Position = Y;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = true;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseUp(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = false;
+}
+//---------------------------------------------------------------------------
+
+
+
 

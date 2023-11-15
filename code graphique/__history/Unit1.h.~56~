@@ -10,6 +10,8 @@
 #include "DMXTCP.h"
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Buttons.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.Graphics.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -45,6 +47,24 @@ __published:	// Composants gérés par l'EDI
 	TSpeedButton *SpeedButton12;
 	TSpeedButton *SpeedButton13;
 	TSpeedButton *SpeedButton14;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TLabel *Label4;
+	TLabel *Label5;
+	TLabel *Label6;
+	TLabel *Label8;
+	TLabel *Label9;
+	TLabel *Label10;
+	TLabel *Label7;
+	TTrackBar *TrackBar1;
+	TTrackBar *TrackBar2;
+	TTrackBar *TrackBar3;
+	TLabel *Label12;
+	TLabel *Label13;
+	TLabel *Label14;
+	TBevel *Bevel1;
+	TImage *Image1;
 	void __fastcall ScrollBar1Change(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
@@ -74,8 +94,18 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall SpeedButton13Click(TObject *Sender);
 	void __fastcall SpeedButton12Click(TObject *Sender);
 	void __fastcall SpeedButton11Click(TObject *Sender);
+	void __fastcall TrackBar3Change(TObject *Sender);
+	void __fastcall TrackBar2Change(TObject *Sender);
+	void __fastcall TrackBar1Change(TObject *Sender);
+	void __fastcall Image1MouseMove(TObject *Sender, TShiftState Shift, int X, int Y);
+	void __fastcall Image1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y);
+	void __fastcall Image1MouseUp(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y);
+
 private:	// Déclarations utilisateur
 	DMXTCP monDMX;
+		bool click;
 public:		// Déclarations utilisateur
 	__fastcall TForm1(TComponent* Owner);
 };

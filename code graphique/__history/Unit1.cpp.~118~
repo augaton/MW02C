@@ -233,6 +233,44 @@ void __fastcall TForm1::TrackBar3Change(TObject *Sender)
 //---------------------------------------------------------------------------
 
 
+void __fastcall TForm1::TrackBar2Change(TObject *Sender)
+{
+	ScrollBar4->Position = (255 - TrackBar2->Position);
+}
+//---------------------------------------------------------------------------
 
+void __fastcall TForm1::TrackBar1Change(TObject *Sender)
+{
+     ScrollBar3->Position = (255 - TrackBar1->Position);
+}
+//---------------------------------------------------------------------------
+
+
+
+
+
+void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int X,
+		  int Y)
+{
+	if (click == true) {
+		Image1->Left = X;
+		Image1->Top = Y;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = true;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseUp(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = false;
+}
+//---------------------------------------------------------------------------
 
 

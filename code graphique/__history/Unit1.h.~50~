@@ -93,6 +93,7 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall SpeedButton11Click(TObject *Sender);
 	void __fastcall TrackBar3Change(TObject *Sender);
 	void __fastcall TrackBar2Change(TObject *Sender);
+	void __fastcall TrackBar1Change(TObject *Sender);
 private:	// Déclarations utilisateur
 	DMXTCP monDMX;
 public:		// Déclarations utilisateur

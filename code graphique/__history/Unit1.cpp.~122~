@@ -31,12 +31,32 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
 {
 	monDMX.FullOFF();
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
+	ScrollBar1->Position = 0;
+	ScrollBar2->Position = 0;
+	ScrollBar3->Position = 0;
+	ScrollBar4->Position = 0;
+	ScrollBar5->Position = 0;
+	ScrollBar6->Position = 0;
+	ScrollBar7->Position = 0;
+	ScrollBar8->Position = 0;
+	ScrollBar9->Position = 0;
+	ScrollBar10->Position = 0;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Button3Click(TObject *Sender)
 {
 	monDMX.FullON();
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
+	ScrollBar1->Position = 255;
+	ScrollBar2->Position = 255;
+	ScrollBar3->Position = 255;
+	ScrollBar4->Position = 255;
+	ScrollBar5->Position = 255;
+	ScrollBar6->Position = 255;
+	ScrollBar7->Position = 255;
+	ScrollBar8->Position = 255;
+	ScrollBar9->Position = 255;
+	ScrollBar10->Position = 255;
 }
 //---------------------------------------------------------------------------
 
@@ -128,70 +148,70 @@ void __fastcall TForm1::Button4Click(TObject *Sender)
 
 void __fastcall TForm1::SpeedButton1Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,1);
+	ScrollBar5->Position = (255 - 1);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton2Click(TObject *Sender)
 {
-   monDMX.ModifierCanal(13,13);
+   ScrollBar5->Position = (255 - 13);
    monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton3Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,26);
+	ScrollBar5->Position = (255 - 26);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton4Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,39);
+	ScrollBar5->Position = (255 - 39);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton5Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,52);
+	ScrollBar5->Position = (255 - 52);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton6Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,65);
+	ScrollBar5->Position = (255 - 65);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton7Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,78);
+	ScrollBar5->Position = (255 - 78);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton8Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,91);
+	ScrollBar5->Position = (255 - 91);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton9Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,104);
+	ScrollBar5->Position = (255 - 104);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SpeedButton10Click(TObject *Sender)
 {
-	monDMX.ModifierCanal(13,117);
+	ScrollBar5->Position = (255 - 117);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
@@ -199,7 +219,6 @@ void __fastcall TForm1::SpeedButton10Click(TObject *Sender)
 void __fastcall TForm1::SpeedButton14Click(TObject *Sender)
 {
 	ScrollBar4->Position = (255 - 53);
-	monDMX.ModifierCanal(3,21);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
@@ -207,7 +226,6 @@ void __fastcall TForm1::SpeedButton14Click(TObject *Sender)
 void __fastcall TForm1::SpeedButton13Click(TObject *Sender)
 {
 	ScrollBar4->Position = (255 - 70);
-	monDMX.ModifierCanal(3,161);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
@@ -215,7 +233,6 @@ void __fastcall TForm1::SpeedButton13Click(TObject *Sender)
 void __fastcall TForm1::SpeedButton12Click(TObject *Sender)
 {
 	ScrollBar4->Position = (255 - 49);
-	monDMX.ModifierCanal(3,49);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
@@ -223,7 +240,6 @@ void __fastcall TForm1::SpeedButton12Click(TObject *Sender)
 void __fastcall TForm1::SpeedButton11Click(TObject *Sender)
 {
 	ScrollBar4->Position = (255 - 35);
-	monDMX.ModifierCanal(3,35);
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
 }
 //---------------------------------------------------------------------------
@@ -232,9 +248,55 @@ void __fastcall TForm1::SpeedButton11Click(TObject *Sender)
 
 void __fastcall TForm1::TrackBar3Change(TObject *Sender)
 {
-	monDMX.ModifierCanal(5,TrackBar3->Position);
-	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
+	ScrollBar5->Position = (255 - TrackBar3->Position);
 }
 //---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::TrackBar2Change(TObject *Sender)
+{
+	ScrollBar4->Position = (255 - TrackBar2->Position);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::TrackBar1Change(TObject *Sender)
+{
+     ScrollBar3->Position = (255 - TrackBar1->Position);
+}
+//---------------------------------------------------------------------------
+
+
+
+
+
+void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int X,
+		  int Y)
+{
+	int haut = Image1->Top + Y - Image1->Height/2;
+	int gauche = Image1->Left + X - Image1->Width/2;
+	if (click == true && gauche>Bevel1->Left
+					  && haut>Bevel1->Top
+					  && gauche+Image1->Width<Bevel1->Left+Bevel1->Width
+					  && haut+Image1->Height<Bevel1->Top+Bevel1->Height) {
+		Image1->Left = haut;
+		Image1->Top = gauche;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = true;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseUp(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = false;
+}
+//---------------------------------------------------------------------------
+
 
 

@@ -31,6 +31,16 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
 {
 	monDMX.FullOFF();
 	monDMX.Envoyer(AnsiString(Edit1 -> Text).c_str(), 4123);
+	Label1->Caption = 255;
+	Label2->Caption = 255;
+	Label3->Caption = 255;
+	Label4->Caption = 255;
+	Label5->Caption = 255;
+	Label6->Caption = 255;
+	Label7->Caption = 255;
+	Label8->Caption = 255;
+	Label9->Caption = 255;
+	Label10->Caption = 255;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Button3Click(TObject *Sender)
@@ -238,4 +248,39 @@ void __fastcall TForm1::TrackBar2Change(TObject *Sender)
 	ScrollBar4->Position = (255 - TrackBar2->Position);
 }
 //---------------------------------------------------------------------------
+
+void __fastcall TForm1::TrackBar1Change(TObject *Sender)
+{
+     ScrollBar3->Position = (255 - TrackBar1->Position);
+}
+//---------------------------------------------------------------------------
+
+
+
+
+
+void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int X,
+		  int Y)
+{
+	if (click == true) {
+		Image1->Left = X;
+		Image1->Top = Y;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = true;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Image1MouseUp(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	click = false;
+}
+//---------------------------------------------------------------------------
+
 

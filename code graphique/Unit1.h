@@ -65,6 +65,7 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Label14;
 	TBevel *Bevel1;
 	TImage *Image1;
+	TLabel *Label15;
 	void __fastcall ScrollBar1Change(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
